@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+iframe,
+div {
+    border: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+header {
+    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 8px 20px;
+    right: 0;
+    top: 0;
+    height: 46px;
+    width: calc(137px);
+}
+
+header button, #helpForm .modal-body button {
+    background-color: #000;
+    border: 1px solid #555;
+    border-radius: 5px;
+    color: #fff;
+}
+
+iframe#mapBox {
+    width: 100vw;
+    height: calc(100vh - 46px);
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    height: 46px;
+    padding: 8px 20px;
+    text-align: center;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+footer a {
+    text-overflow: ellipsis;
+}
+
+#editForm .modal-dialog {
+    max-width: max-content;
+}
+
+#editForm .modal-body {
+    padding: 0;
+    padding-bottom: 1rem;
+}
+
+#editForm iframe {
+    width: min(650px, 90vw);
+    height: calc(100vh - 10rem);
+}
+
+#helpForm .modal-dialog {
+    max-width: 650px;
+}
