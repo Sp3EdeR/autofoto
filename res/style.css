@@ -33,13 +33,13 @@ header button, #helpForm .modal-body button {
 
 iframe#mapBox {
     width: 100%;
-    height: calc(100% - 46px);
+    height: calc(100% - 38px);
 }
 
 footer {
     background-color: #333;
     color: #fff;
-    height: 46px;
+    height: 38px;
     padding: 8px 20px;
     text-align: center;
     font-family: Roboto, Arial, sans-serif;
@@ -49,6 +49,15 @@ footer {
 
 footer a {
     text-overflow: ellipsis;
+}
+
+.ico-big {
+    font-size: 22px;
+    vertical-align: -3px;
+}
+.ico-idx {
+    font-size: 14px;
+    vertical-align: -4px;
 }
 
 #editForm .modal-dialog {
