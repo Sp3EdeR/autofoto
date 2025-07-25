@@ -24,6 +24,11 @@ header {
     width: calc(137px);
 }
 
+header button {
+    width: 34px;
+    height: 30px;
+}
+
 header button, #helpForm .modal-body button {
     background-color: #000;
     border: 1px solid #555;

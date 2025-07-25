@@ -46,6 +46,16 @@
   <header class="d-flex align-content-end">
     <button type="button" data-toggle="modal" data-target="#editForm" class="ml-auto mr-3" title="Szerkesztési jogosultság kérése"><i class="fa-solid fa-pen-to-square"></i></button>
     <button type="button" data-toggle="modal" data-target="#helpForm" title="További információk"><i class="fa-regular fa-circle-question"></i></button>
+    <script>
+      if( /Android|webOS|iPhone|iPad|iPod|Opera Mini/i.test(navigator.userAgent) ) {
+        $('header button').removeClass('mr-3');
+        $('header').prepend(
+          '<form action="https://www.google.com/maps/d/viewer" target="_blank">' +
+            '<button name="mid" value="1idA8s8zU-3pBdZZ8tMN43AjqKrvdV6U" style="padding: 1px" title="Megnyitás a Térképek alkalmazásban"><i class="fa-regular fa-map"></i></button>' +
+          '</form>'
+        );
+      }
+    </script>
   </header>
   <iframe id="mapBox" src="https://www.google.com/maps/d/embed?mid=1idA8s8zU-3pBdZZ8tMN43AjqKrvdV6U&ehbc=2E312F&noprof=1" frameborder="0" scrolling="no"></iframe>
 
