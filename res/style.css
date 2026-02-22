@@ -4,6 +4,18 @@ body {
     position: fixed;
     width: 100%;
     height: 100%;
+    --fa-width: auto;
+}
+
+a {
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
 }
 
 iframe,
@@ -50,10 +62,6 @@ footer {
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
-}
-
-footer a {
-    text-overflow: ellipsis;
 }
 
 .ico-big {
